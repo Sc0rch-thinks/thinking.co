@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "minsans";
+	src: url(media/fonts/MinSans-Medium.otf);
+	src: url(media/fonts/MinSans-Medium.otf)
+		format("opentype");
+}
+@font-face {
+	font-family: "orifont";
+	src: url(media/fonts/Orifont-Regular.ttf);
+	src: url(media/fonts/Orifont-Regular.ttf)
+		format("truetype");
+}
+:root {
+	--primary-color: #e4d4ff;
+	--secondary-color: #d6efed;
+	--main-font: minsans;
+	--secondary-font: orifont;
+}
+
+header {
+	background-color: var(--secondary-color);
+	display : flex;
+}
+.menu-icon {
+	visibility: hidden;
+}
+.title {
+	font-family: orifont;
+}
+.nav-link {
+	font-family: orifont;
+	padding: 0;
+}
+.nav {
+	display: flex;
+	max-width: fit-content;
+}
+
+.nav-item {
+	margin-right: 4.8vw;
+}
+.nav-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	padding-bottom: 1.5vh;
+}
+.logo {
+	width: 8vw;
+	height: 8vw;
+	padding: 1vw;
+	
+}
+@media (max-width: 768px){
+	.nav{display: none;}
+	.menu-icon{display: block;}
+}
