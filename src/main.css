@@ -23,11 +23,11 @@
 
 header {
 	background-color: var(--secondary-color);
-	display : flex;
+	display: flex;
+	justify-content: center;
+	
 }
-.menu-icon {
-	visibility: hidden;
-}
+
 .title {
 	font-family: orifont;
 }
@@ -49,14 +49,35 @@ header {
 	justify-content: start;
 	align-items: start;
 	padding-bottom: 1.5vh;
+	align-self: center;
 }
 .logo {
+	min-height: 65px;
+	min-width: 65px;
 	width: 8vw;
 	height: 8vw;
-	padding: 1vw;
-	
+	max-width: 100px;
+	max-height: 100px;
+	aligh-self: center;
+	padding: 10px;
 }
-@media (max-width: 768px){
-	.nav{display: none;}
-	.menu-icon{display: block;}
+.menu-icon {
+	visibility: hidden;
+	display: none;
+}
+/* making the hamburger menu only show up when screen size becomes too small */
+@media (max-width: 768px) {
+	.nav {
+		display: none;
+	}
+	.menu-icon {
+		visibility: visible;
+		display: flex;
+		justify-self: center;
+		align-self: center;
+
+	}
+	header {
+		justify-content: space-around;
+	}
 }

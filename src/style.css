@@ -564,12 +564,19 @@ video {
   display: flex;
 }
 
-.hidden {
-  display: none;
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
-.justify-center {
-  justify-content: center;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 @font-face {
@@ -599,11 +606,8 @@ video {
 
 header {
   background-color: var(--secondary-color);
-  display : flex;
-}
-
-.menu-icon {
-  visibility: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .title {
@@ -631,20 +635,62 @@ header {
   justify-content: start;
   align-items: start;
   padding-bottom: 1.5vh;
+  align-self: center;
 }
 
 .logo {
+  min-height: 65px;
+  min-width: 65px;
   width: 8vw;
   height: 8vw;
-  padding: 1vw;
+  max-width: 100px;
+  max-height: 100px;
+  aligh-self: center;
+  padding: 10px;
 }
 
-@media (max-width: 768px){
-  .nav{
+.menu-icon {
+  visibility: hidden;
+  display: none;
+}
+
+/* making the hamburger menu only show up when screen size becomes too small */
+
+@media (max-width: 768px) {
+  .nav {
     display: none;
   }
 
-  .menu-icon{
-    display: block;
+  .menu-icon {
+    visibility: visible;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+
+  header {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
