@@ -548,6 +548,10 @@ video {
   position: fixed;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -568,9 +572,18 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-xl {
@@ -581,9 +594,9 @@ video {
 @font-face {
   font-family: "minsans";
 
-  src: url(media/fonts/MinSans-Medium.otf);
+  src: url(media/fonts/MinSans-Regular.otf);
 
-  src: url(media/fonts/MinSans-Medium.otf)
+  src: url(media/fonts/MinSans-Regular.otf)
 		format("opentype");
 }
 
@@ -607,6 +620,8 @@ header {
   background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0;
 }
 
 .title {
@@ -633,16 +648,15 @@ header {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  padding-bottom: 1.5vh;
   align-self: center;
 }
 
 .logo {
-  min-height: 65px;
-  min-width: 65px;
+  min-height: 80px;
+  min-width: 80px;
   width: 8vw;
   height: 8vw;
-  max-width: 100px;
+  max-width: 120px;
   max-height: 100px;
   aligh-self: center;
   padding: 10px;
@@ -655,7 +669,7 @@ header {
 
 /* making the hamburger menu only show up when screen size becomes too small */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav {
     display: none;
   }
@@ -672,7 +686,7 @@ header {
   }
 }
 
-.overlay{
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -690,6 +704,47 @@ header {
   align-items: center;
 }
 
+main {
+  background-color: var(--primary-color);
+  padding: 20px;
+}
+
+.game-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  justify-self: center;
+  align-self: center;
+}
+
+@media (max-width: 900px) {
+  .game-info-container {
+    flex-direction: column;
+  }
+
+  .game-info-image {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+.game-info-image{
+  width: 40vw;
+}
+
+h1 {
+  font-family: orifont;
+}
+
+h3 {
+  font-family: MinSans;
+}
+
+li {
+  font-family: MinSans;
+}
+
 @media (min-width: 640px) {
   .sm\:text-3xl {
     font-size: 1.875rem;
@@ -698,6 +753,10 @@ header {
 }
 
 @media (min-width: 768px) {
+  .md\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -713,5 +772,21 @@ header {
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mr-24 {
+    margin-right: 6rem;
   }
 }

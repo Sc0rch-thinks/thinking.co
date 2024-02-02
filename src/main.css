@@ -4,8 +4,8 @@
 
 @font-face {
 	font-family: "minsans";
-	src: url(media/fonts/MinSans-Medium.otf);
-	src: url(media/fonts/MinSans-Medium.otf)
+	src: url(media/fonts/MinSans-Regular.otf);
+	src: url(media/fonts/MinSans-Regular.otf)
 		format("opentype");
 }
 @font-face {
@@ -25,6 +25,8 @@ header {
 	background-color: var(--secondary-color);
 	display: flex;
 	justify-content: center;
+	position: sticky;
+	top: 0;
 }
 
 .title {
@@ -47,15 +49,15 @@ header {
 	flex-direction: column;
 	justify-content: start;
 	align-items: start;
-	padding-bottom: 1.5vh;
+
 	align-self: center;
 }
 .logo {
-	min-height: 65px;
-	min-width: 65px;
+	min-height: 80px;
+	min-width: 80px;
 	width: 8vw;
 	height: 8vw;
-	max-width: 100px;
+	max-width: 120px;
 	max-height: 100px;
 	aligh-self: center;
 	padding: 10px;
@@ -65,7 +67,7 @@ header {
 	display: none;
 }
 /* making the hamburger menu only show up when screen size becomes too small */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 	.nav {
 		display: none;
 	}
@@ -79,7 +81,7 @@ header {
 		justify-content: space-around;
 	}
 }
- .overlay{
+.overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -94,4 +96,38 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+main {
+	background-color: var(--primary-color);
+	padding: 20px;
+}
+.game-info-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+	justify-self: center;
+	align-self: center;
+}
+@media (max-width: 900px) {
+	.game-info-container {
+		flex-direction: column;
+	}
+	.game-info-image {
+		width: 80vw;
+		height: auto;
+	}
+}
+.game-info-image{
+	width: 40vw;
+
+}
+h1 {
+	font-family: orifont;
+}
+h3 {
+	font-family: MinSans;
+}
+li {
+	font-family: MinSans;
 }
