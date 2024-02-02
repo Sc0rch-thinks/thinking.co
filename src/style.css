@@ -658,7 +658,7 @@ header {
   height: 8vw;
   max-width: 120px;
   max-height: 100px;
-  aligh-self: center;
+  align-self: center;
   padding: 10px;
 }
 
@@ -706,14 +706,14 @@ header {
 
 main {
   background-color: var(--primary-color);
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .game-info-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 80%;
   justify-self: center;
   align-self: center;
 }
@@ -745,6 +745,11 @@ li {
   font-family: MinSans;
 }
 
+img {
+  width: 25vw;
+  height: auto;
+}
+
 @media (min-width: 640px) {
   .sm\:text-3xl {
     font-size: 1.875rem;
@@ -774,8 +779,8 @@ li {
     line-height: 1;
   }
 
-  .lg\:text-6xl {
-    font-size: 3.75rem;
+  .lg\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 

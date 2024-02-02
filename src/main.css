@@ -59,7 +59,7 @@ header {
 	height: 8vw;
 	max-width: 120px;
 	max-height: 100px;
-	aligh-self: center;
+	align-self: center;
 	padding: 10px;
 }
 .menu-icon {
@@ -99,13 +99,13 @@ header {
 }
 main {
 	background-color: var(--primary-color);
-	padding: 20px;
+	padding-top: 20px;
 }
 .game-info-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 60%;
+	width: 80%;
 	justify-self: center;
 	align-self: center;
 }
@@ -130,4 +130,8 @@ h3 {
 }
 li {
 	font-family: MinSans;
+}
+img {
+	width: 25vw;
+	height: auto;
 }
