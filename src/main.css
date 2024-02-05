@@ -80,6 +80,9 @@ header {
 	header {
 		justify-content: space-around;
 	}
+	.points {
+		display: none;
+	}
 }
 .overlay {
 	position: fixed;
@@ -118,9 +121,8 @@ main {
 		height: auto;
 	}
 }
-.game-info-image{
+.game-info-image {
 	width: 40vw;
-
 }
 h1 {
 	font-family: orifont;
@@ -134,4 +136,7 @@ li {
 img {
 	width: 25vw;
 	height: auto;
+}
+points {
+	font-family: MinSans;
 }
