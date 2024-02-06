@@ -577,6 +577,11 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -606,10 +611,14 @@ video {
 }
 
 :root {
-  --primary-color: #e4d4ff;
-  --secondary-color: #d6efed;
+  --primary-color: #b3daff;
+  --secondary-color: #51606f;
   --main-font: minsans;
   --secondary-font: orifont;
+}
+
+.dropdown-menu {
+  background-color: var(--secondary-color);
 }
 
 header {
@@ -618,6 +627,7 @@ header {
   justify-content: center;
   position: sticky;
   top: 0;
+  color: white;
 }
 
 .title {
@@ -627,6 +637,20 @@ header {
 .nav-link {
   font-family: orifont;
   padding: 0;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link:active {
+  color: white;
+}
+
+.nav-link:visited {
+  color: white;
 }
 
 .nav {
@@ -637,6 +661,7 @@ header {
 
 .nav-item {
   margin-right: 4.8vw;
+  color: var(--primary-color);
 }
 
 .nav-box {
@@ -691,17 +716,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 1);
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: var(--secondary-color);
   justify-content: center;
   align-items: center;
-}
-
-.overlay-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  color: black;
 }
 
 main {
@@ -754,6 +774,22 @@ points {
   font-family: MinSans;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.ori{
+  font-family: orifont;
+}
+
 @media (min-width: 640px) {
   .sm\:text-3xl {
     font-size: 1.875rem;
@@ -799,3 +835,4 @@ points {
     margin-right: 6rem;
   }
 }
+

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 691 316">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 13px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        font-family: PixelifySans-Regular, 'PixelifySans Regular';
+        font-variation-settings: ';
+      }
+
+      .cls-5, .cls-6 {
+        font-size: 100px;
+      }
+
+      .cls-5, .cls-3 {
+        fill: #f2f2f2;
+      }
+
+      .cls-7 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-6, .cls-11 {
+        font-family: PixelifySans-Medium, 'PixelifySans Medium';
+        font-variation-settings: ';
+        font-weight: 500;
+      }
+
+      .cls-12 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-13 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-11 {
+        font-size: 115px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <circle class="cls-2" cx="393" cy="120" r="48.5"/>
+      <text class="cls-5" transform="translate(359.29 142.17)"><tspan x="0" y="0">a</tspan></text>
+    </g>
+    <g>
+      <circle class="cls-2" cx="312" cy="206" r="48.5"/>
+      <text class="cls-5" transform="translate(283.29 237.17)"><tspan x="0" y="0">B</tspan></text>
+    </g>
+    <text class="cls-6" transform="translate(361.06 238.39)"><tspan class="cls-10" x="0" y="0">a</tspan><tspan class="cls-7" x="45.37" y="0">b</tspan><tspan class="cls-4" x="100.01" y="0">b</tspan><tspan class="cls-9" x="154.89" y="0">l</tspan><tspan class="cls-8" x="176.19" y="0">e</tspan></text>
+    <text class="cls-11" transform="translate(277.06 147.06)"><tspan x="0" y="0">G</tspan></text>
+    <text class="cls-6" transform="translate(442.83 143.61)"><tspan class="cls-12" x="0" y="0">m</tspan><tspan class="cls-13" x="81.32" y="0">e</tspan><tspan x="128.7" y="0">s</tspan></text>
+    <g>
+      <rect class="cls-2" x="120.5" y="65.5" width="65" height="186" rx="10" ry="10"/>
+      <rect class="cls-2" x="121" y="65" width="65" height="186" rx="10" ry="10" transform="translate(311.5 4.5) rotate(90)"/>
+      <polygon class="cls-3" points="153.1 83.86 135.7 114 170.5 114 153.1 83.86"/>
+      <polygon class="cls-3" points="76.1 158.7 106.24 176.1 106.24 141.3 76.1 158.7"/>
+      <polygon class="cls-3" points="231.96 158.55 201.82 141.15 201.82 175.95 231.96 158.55"/>
+      <polygon class="cls-3" points="153.46 233.76 170.86 203.63 136.06 203.63 153.46 233.76"/>
+    </g>
+    <rect class="cls-1" x="6.5" y="6.5" width="678" height="303" rx="25" ry="25"/>
+  </g>
+</svg>

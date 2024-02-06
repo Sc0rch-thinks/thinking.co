@@ -36,42 +36,66 @@
 					>
 						Ori And The Blind Forest
 					</span>
-					<span
-						class="points text-xl lg:text-2xl"
-						id="points"
-						>Points :
-					</span>
 				</div>
 				<ul class="nav">
-					<li
-						class="nav-item text-xl lg:text-2xl"
-					>
-						<a class="nav-link" href="#"
-							>Characters</a
+					<li class="nav-item text-xl lg:text-2xl">
+						<a
+							class="nav-link"
+							href="./index.html"
+							>home</a
 						>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle text-xl lg:text-2xl"
+							href="#"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							wiki
+						</a>
+						<ul class="dropdown-menu">
+							<li
+								class="nav-item text-xl lg:text-2xl"
+							>
+								<a
+									class="nav-link dropdown-item"
+									href="./characters.html"
+									>Characters</a
+								>
+							</li>
+
+							<li
+								class="nav-item text-xl lg:text-2xl"
+							>
+								<a
+									class="nav-link dropdown-item"
+									href="#"
+									>Enviroments</a
+								>
+							</li>
+							<li
+								class="nav-item text-xl lg:text-2xl"
+							>
+								<a
+									class="nav-link dropdown-item"
+									href="#"
+									>Ability tree</a
+								>
+							</li>
+							<li
+								class="nav-item text-xl lg:text-2xl"
+							>
+								<a
+									class="nav-link dropdown-item"
+									href="#"
+									>Skills</a
+								>
+							</li>
+						</ul>
 					</li>
 
-					<li
-						class="nav-item text-xl lg:text-2xl"
-					>
-						<a class="nav-link" href="#"
-							>Enviroments</a
-						>
-					</li>
-					<li
-						class="nav-item text-xl lg:text-2xl"
-					>
-						<a class="nav-link" href="#"
-							>Ability tree</a
-						>
-					</li>
-					<li
-						class="nav-item text-xl lg:text-2xl"
-					>
-						<a class="nav-link" href="#"
-							>Skills</a
-						>
-					</li>
 					<li
 						class="nav-item text-xl lg:text-2xl"
 					>
@@ -105,12 +129,79 @@
 					/>
 				</svg>
 			</button>
-			<div id="overlay" class="overlay flex">
-				<ul class="overlay-nav">
+			<div id="overlay" class="overlay">
+				<nav class="overlay-nav">
+					<ul class="">
+						<li>
+							<a
+								href="./index.html"
+								class="ori text-3xl lg:text-2xl"
+								>home</a
+							>
+						</li>
+						<li>
+							<a
+								href="./characters.html"
+								class="ori text-3xl lg:text-2xl"
+								>Characters</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="ori text-3xl lg:text-2xl"
+								>Enviroments</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="ori text-3xl lg:text-2xl"
+								>Ability tree</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="ori text-3xl lg:text-2xl"
+								>Skills</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="ori text-3xl lg:text-2xl"
+								>Daily Quiz</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="ori text-3xl lg:text-2xl"
+								>Login</a
+							>
+						</li>
+					</ul>
+					<button type="button" id="close">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="30"
+							height="30"
+							fill="currentColor"
+							class="bi bi-x-lg"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+							/>
+						</svg>
+					</button>
+				</nav>
+				<!-- <ul class="overlay-nav">
 					<li
 						class="nav-item text-xl lg:text-2xl"
 					>
-						<a class="nav-link" href="#"
+						<a class="nav-link" href="./characters.html"
 							>Characters</a
 						>
 					</li>
@@ -146,7 +237,7 @@
 					<li class="nav-item text-xl lg:text-xl">
 						<a class="nav-link" href="#">Login</a>
 					</li>
-				</ul>
+				</ul> -->
 			</div>
 		</header>
 		<main>

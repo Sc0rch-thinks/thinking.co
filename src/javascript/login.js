@@ -4,7 +4,8 @@ document
 	.getElementById("sign-up")
 	.addEventListener("click", function (e) {
 		e.preventDefault();
-        console.log("sign-up");
+		console.log("sign-up");
+        
 		let username =
 			document.getElementById("username").value;
 		let password =
@@ -22,12 +23,11 @@ document
 			method: "POST",
 			headers: {
 				"content-type": "application/json",
-				"x-apikey": apikey,
-				"cache-control": "no-cache",
+				"x-apikey": "65a78c8beb463b13995b4bdd",
 			},
-			processData: false,
 			data: JSON.stringify(jsondata),
 		};
+
 		$.ajax(settings).done(function (response) {
 			console.log(response);
 		});
