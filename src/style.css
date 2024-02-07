@@ -847,6 +847,11 @@ footer {
 .characters-info{
 }
 
+.skill-img{
+  background-color: #03001C ;
+  border-radius: 50%;
+}
+
 @media (min-width: 640px) {
   .sm\:text-3xl {
     font-size: 1.875rem;

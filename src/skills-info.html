@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		/>
+		<title>homepage</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="./css/normalise.css"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<header class="flex sticky">
+			<img
+				src="media/logo.svg"
+				alt="logo"
+				class="logo md:mr-10 lg:mr-18 xl:mr-24"
+				id="logo"
+			/>
+			<div class="nav-box">
+				<div
+					class="flex items-center justify-center"
+				>
+					<span
+						class="title text-2xl sm:text-3xl md:text-4xl lg:text-7xl"
+					>
+						Ori And The Blind Forest
+					</span>
+				</div>
+				<ul class="nav">
+					<li
+						class="nav-item text-xl lg:text-2xl"
+					>
+						<a
+							class="nav-link"
+							href="./index.html"
+							>home</a
+						>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle text-xl lg:text-2xl"
+							href="#"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							wiki
+						</a>
+						<ul class="dropdown-menu">
+							<li
+								class="nav-item text-xl lg:text-2xl"
+							>
+								<a
+									class="nav-link dropdown-item"
+									href="./characters.html"
+									>Characters</a
+								>
+							</li>
+
+							<li
+								class="nav-item text-xl lg:text-2xl"
+							>
+								<a
+									class="nav-link dropdown-item"
+									href="enviroments.html"
+									>Enviroments</a
+								>
+							</li>
+							<li
+								class="nav-item text-xl lg:text-2xl"
+							>
+								<a
+									class="nav-link dropdown-item"
+									href="ability.html"
+									>Ability tree</a
+								>
+							</li>
+							<li
+								class="nav-item text-xl lg:text-2xl"
+							>
+								<a
+									class="nav-link dropdown-item"
+									href="skills.html"
+									>Skills</a
+								>
+							</li>
+						</ul>
+					</li>
+
+					<li
+						class="nav-item text-xl lg:text-2xl"
+					>
+						<a class="nav-link" href="#"
+							>Daily Quiz</a
+						>
+					</li>
+					<li
+						class="nav-item text-xl lg:text-2xl"
+					>
+						<a class="nav-link" href="#">Login</a>
+					</li>
+				</ul>
+			</div>
+			<button
+				type="button"
+				class="menu-icon"
+				id="menu-icon"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="30"
+					height="30"
+					fill="currentColor"
+					class="bi bi-list"
+					viewBox="0 0 16 16"
+				>
+					<path
+						fill-rule="evenodd"
+						d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+					/>
+				</svg>
+			</button>
+			<div id="overlay" class="overlay flex">
+				<nav class="overlay-nav justify-center">
+					<ul class="">
+						<li>
+							<a
+								href="./index.html"
+								class="ori text-3xl lg:text-2xl"
+								>home</a
+							>
+						</li>
+						<li>
+							<a
+								href="./characters.html"
+								class="ori text-3xl lg:text-2xl"
+								>Characters</a
+							>
+						</li>
+						<li>
+							<a
+								href="enviroments.html"
+								class="ori text-3xl lg:text-2xl"
+								>Enviroments</a
+							>
+						</li>
+						<li>
+							<a
+								href="ability.html"
+								class="ori text-3xl lg:text-2xl"
+								>Ability tree</a
+							>
+						</li>
+						<li>
+							<a
+								href="skills.html"
+								class="ori text-3xl lg:text-2xl"
+								>Skills</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="ori text-3xl lg:text-2xl"
+								>Daily Quiz</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="ori text-3xl lg:text-2xl"
+								>Login</a
+							>
+						</li>
+					</ul>
+					<button type="button" id="close">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="30"
+							height="30"
+							fill="currentColor"
+							class="bi bi-x-lg"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+							/>
+						</svg>
+					</button>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div id="spirit-flame" class="skills-info">
+				<img
+					src="./media/images/spirit-flame.webp"
+					class="skill-img"
+					alt="spirit flame"
+				/>
+				<h1>spirit flame</h1>
+				<p>
+					Spirit Flame is the very first skill Ori
+					learns, and one of only two skills
+					obtained through a Story Event and not
+					an Ancestral Tree. Learned when Ori
+					discovers Sein in the Sunken Glades,
+					Spirit Flame allows Ori to fire Sein's
+					light at an enemy. Provided certain
+					abilities are present, it can hit
+					multiple enemies at once.
+				</p>
+			</div>
+			<div id="wall-jump" class="skills-info">
+				<img
+					src="./media/images/wall-jump.png"
+					class="skill-img"
+					alt=""
+				/>
+				<h1>wall jump</h1>
+				<p>
+					Wall Jump is the second skill Ori
+					learns, and the first skill to be had
+					from an Ancestral Tree. Passed on to Ori
+					by the light of Fil, it allows the young
+					spirit to jump up and off of walls, and
+					enables access to areas that cannot be
+					reached by a single jump alone. It is
+					essential to exploring Nibel. The
+					Ancestral Tree for Wall Jump is found
+					deep within the Sunken Glades.
+				</p>
+			</div>
+			<div id="charge-flame" class="skills-info">
+				<img
+					src="./media/images/charge-flame.webp"
+					class="skill-img"
+					alt="charge flame"
+				/>
+				<h1>charge flame</h1>
+				<p>
+					Charge Flame is the third skill Ori
+					learns, and the second skill to be had
+					from an Ancestral Tree. Passed on to Ori
+					by the light of Fil, it allows the young
+					spirit to charge Sein's light and
+					release it in a large explosion. It is
+					essential to defeating certain enemies
+					and destroying certain obstacles. The
+					Ancestral Tree for Charge Flame is found
+					in the Hollow Grove.
+				</p>
+			</div>
+			<div id="double-jump" class="skills-info">
+				<img
+					src="./media/images/double jump.webp"
+					class="skill-img"
+					alt="double jump"
+				/>
+				<h1>double jump</h1>
+				<p>
+					Double Jump is the fourth skill Ori
+					learns. Ori receives this skill from
+					Leru's Ancestral Tree, tucked away in
+					Gumo's Hideout. It allows Ori to Jump
+					again while already airborne, or jump
+					twice (hence the name). The second
+					aerial jump produces a characteristic
+					"V" on screen which indicates that Ori
+					has taken a double jump. This skill is
+					required to continue exploring Nibel
+					after Gumo's Hideout, and the extra jump
+					also makes many pickups accessible that
+					otherwise weren't.
+				</p>
+			</div>
+			<div id="bash" class="skills-info">
+				<img
+					src="./media/images/bash.png"
+					class="skill-img"
+					alt="bash"
+				/>
+				<h1>bash</h1>
+				<p>
+					Bash is the fifth skill Ori learns. Ori
+					receives this skill from the Ancestral
+					Tree of the Spirit Tree, located in the
+					Thornfelt Swamp. It allows Ori to
+					project himself off of enemies, enemy
+					projectiles, and lanterns. It is
+					essential to solving many puzzles and
+					accessing many areas. It is also
+					essential to defeating certain enemies.
+				</p>
+			</div>
+			<div id="stomp" class="skills-info">
+				<img
+					src="./media/images/stomp.png"
+					class="skill-img"
+					alt="stomp"
+				/>
+				<h1>stomp</h1>
+				<p>
+					Stomp is the sixth skill Ori learns. Ori
+					receives this skill from the Ancestral
+					Tree of the Spirit Tree, located in the
+					Thornfelt Swamp. It allows Ori to
+					obliterate certain obstacles and
+					enemies by slamming into the ground. It
+					is essential to solving many puzzles and
+					accessing many areas. It is also
+					essential to defeating certain enemies.
+				</p>
+			</div>
+			<div id="kuro's-feather" class="skills-info">
+				<img
+					src="./media/images/kuro feather.png"
+					class="skill-img"
+					alt="kuro's feather"
+				/>
+				<h1>kuro's feather</h1>
+				<p>
+					Kuro's Feather is the seventh skill Ori
+					learns. Ori receives this skill from the
+					Ancestral Tree of the Spirit Tree,
+					located in the Thornfelt Swamp. It
+					allows Ori to glide through the air,
+					which is essential to solving many
+					puzzles and accessing many areas. It is
+					also essential to defeating certain
+					enemies.
+				</p>
+			</div>
+			<div id="climb" class="skills-info">
+				<img
+					src="./media/images/climb.png"
+					class="skill-img"
+					alt="climb"
+				/>
+				<h1>climb</h1>
+				<p>
+					Climb is the eighth skill Ori learns. Ori
+					receives this skill from the Ancestral
+					Tree of the Spirit Tree, located in the
+					Thornfelt Swamp. It allows Ori to climb
+					up walls, which is essential to solving
+					many puzzles and accessing many areas.
+				</p>
+			</div>
+			<div id="charge-jump" class="skills-info">
+				<img
+					src="./media/images/charge jump.png"
+					class="skill-img"
+					alt="charge jump"
+				/>
+				<h1>charge jump</h1>
+				<p>
+					Charge Jump is the ninth skill Ori
+					learns. Ori receives this skill from the
+					Ancestral Tree of the Spirit Tree,
+					located in the Thornfelt Swamp. It
+					allows Ori to jump higher than usual,
+					which is essential to solving many
+					puzzles and accessing many areas.
+				</p>
+			</div>
+			<div id="light-burst" class="skills-info">
+				<img
+					src="./media/images/light burst.png"
+					class="skill-img"
+					alt="light burst"
+				/>
+				<h1>light burst</h1>
+				<p>
+					Light Burst is the tenth skill Ori
+					learns. Ori receives this skill from the
+					Ancestral Tree of the Spirit Tree,
+					located in the Thornfelt Swamp. It
+					allows Ori to fire a burst of light in
+					any direction, which is essential to
+					solving many puzzles and accessing many
+					areas. It is also essential to defeating
+					certain enemies.
+				</p>
+			</div>
+			<div id="dash" class="skills-info">
+				<img
+					src="./media/images/dash.png"
+					class="skill-img"
+					alt="dash"
+				/>
+				<h1>dash</h1>
+				<p>
+					Dash is the eleventh skill Ori learns.
+					Ori receives this skill from the
+					Ancestral Tree of the Spirit Tree,
+					located in the Thornfelt Swamp. It
+					allows Ori to move quickly in any
+					direction, which is essential to solving
+					many puzzles and accessing many areas.
+				</p>
+			</div>
+		</main>
+
+		<footer>
+			<div class="footer-content">
+				<span>Available on:</span>
+				<img
+					src="./media/steam logo.svg"
+					alt="steam logo"
+					class="attribution-logo"
+				/>
+				<img
+					src="./media/swich logo.svg"
+					alt="switch logo"
+					class="attribution-logo"
+				/>
+				<img
+					src="./media/xbox logo.svg"
+					alt="xbox logo"
+					class="attribution-logo"
+				/>
+			</div>
+			<div class="footer-content">
+				<span>Developed By:</span>
+				<img
+					src="./media/moon logo.jpg"
+					alt="moon logo"
+					class="attribution-logo"
+				/>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+		<script src="./javascript/index.js"></script>
+	</body>
+</html>

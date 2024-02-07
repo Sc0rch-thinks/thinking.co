@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 691 316">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-family: PixelifySans-Medium, 'PixelifySans Medium';
+        font-variation-settings: ';
+        font-weight: 500;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-4 {
+        font-size: 100px;
+      }
+
+      .cls-5, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        font-size: 115px;
+      }
+
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 13px;
+      }
+
+      .cls-10 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-11 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-4 {
+        font-family: PixelifySans-Regular, 'PixelifySans Regular';
+        font-variation-settings: ';
+      }
+
+      .cls-13 {
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <rect class="cls-9" x="6.5" y="6.5" width="678" height="303" rx="25" ry="25"/>
+    <g>
+      <rect class="cls-3" x="120.5" y="65.5" width="65" height="186" rx="10" ry="10"/>
+      <rect class="cls-3" x="121" y="65" width="65" height="186" rx="10" ry="10" transform="translate(311.5 4.5) rotate(90)"/>
+      <polygon class="cls-5" points="153.1 83.86 135.7 114 170.5 114 153.1 83.86"/>
+      <polygon class="cls-5" points="76.1 158.7 106.24 176.1 106.24 141.3 76.1 158.7"/>
+      <polygon class="cls-5" points="231.96 158.55 201.82 141.15 201.82 175.95 231.96 158.55"/>
+      <polygon class="cls-5" points="153.46 233.76 170.86 203.63 136.06 203.63 153.46 233.76"/>
+    </g>
+    <text class="cls-1" transform="translate(442.83 143.61)"><tspan class="cls-12" x="0" y="0">m</tspan><tspan class="cls-13" x="81.32" y="0">e</tspan><tspan x="128.7" y="0">s</tspan></text>
+    <text class="cls-2" transform="translate(277.06 147.06)"><tspan x="0" y="0">G</tspan></text>
+    <text class="cls-1" transform="translate(361.06 238.39)"><tspan class="cls-11" x="0" y="0">a</tspan><tspan class="cls-7" x="45.37" y="0">b</tspan><tspan class="cls-6" x="100.01" y="0">b</tspan><tspan class="cls-10" x="154.89" y="0">l</tspan><tspan class="cls-8" x="176.19" y="0">e</tspan></text>
+    <g>
+      <circle class="cls-3" cx="393.67" cy="119.17" r="48.5"/>
+      <text class="cls-4" transform="translate(359.96 141.34)"><tspan x="0" y="0">a</tspan></text>
+    </g>
+    <g>
+      <circle class="cls-3" cx="311.67" cy="203.17" r="48.5"/>
+      <text class="cls-4" transform="translate(282.96 234.34)"><tspan x="0" y="0">B</tspan></text>
+    </g>
+  </g>
+</svg>
