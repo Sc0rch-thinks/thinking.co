@@ -572,6 +572,10 @@ video {
   justify-content: center;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -615,6 +619,36 @@ video {
   --secondary-color: #51606f;
   --main-font: minsans;
   --secondary-font: orifont;
+}
+
+h1 {
+  font-family: orifont;
+}
+
+h3 {
+  font-family: MinSans;
+}
+
+p{
+  font-family: MinSans;
+}
+
+li {
+  font-family: MinSans;
+}
+
+img {
+  width: 25vw;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+points {
+  font-family: MinSans;
 }
 
 .dropdown-menu {
@@ -727,16 +761,48 @@ header {
 
 main {
   background-color: var(--primary-color);
-  padding-top: 20px;
+  padding: 20px 2.5vw;
+  min-height: 80vh;
 }
 
 .game-info-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
+  width: 100%;
+  padding:0 10vw;
   justify-self: center;
   align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2.5vw;
+}
+
+.game-info-image {
+  width: 40vw;
+  height: auto;
+}
+
+.easter-egg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  margin:2.5vw 0
+}
+
+@media (max-width: 1095px) {
+  .game-info-container {
+    padding:0
+  }
 }
 
 @media (max-width: 900px) {
@@ -745,39 +811,9 @@ main {
   }
 
   .game-info-image {
-    width: 80vw;
+    width: 40vw;
     height: auto;
   }
-}
-
-.game-info-image {
-  width: 40vw;
-}
-
-h1 {
-  font-family: orifont;
-}
-
-h3 {
-  font-family: MinSans;
-}
-
-li {
-  font-family: MinSans;
-}
-
-img {
-  width: 25vw;
-  height: auto;
-}
-
-points {
-  font-family: MinSans;
-}
-
-a {
-  text-decoration: none;
-  color: white;
 }
 
 #close {
@@ -844,9 +880,6 @@ footer {
   height: 75px;
 }
 
-.characters-info{
-}
-
 .skill-img{
   background-color: #03001C ;
   border-radius: 50%;
@@ -856,6 +889,11 @@ footer {
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
@@ -878,6 +916,11 @@ footer {
 
   .lg\:text-5xl {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 

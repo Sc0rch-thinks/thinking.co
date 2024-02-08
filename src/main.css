@@ -20,6 +20,29 @@
 	--main-font: minsans;
 	--secondary-font: orifont;
 }
+h1 {
+	font-family: orifont;
+}
+h3 {
+	font-family: MinSans;
+}
+p{
+	font-family: MinSans;
+}
+li {
+	font-family: MinSans;
+}
+img {
+	width: 25vw;
+	height: auto;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+points {
+	font-family: MinSans;
+}
 .dropdown-menu {
 	background-color: var(--secondary-color);
 }
@@ -114,49 +137,55 @@ header {
 }
 main {
 	background-color: var(--primary-color);
-	padding-top: 20px;
+	padding: 20px 2.5vw;
+	min-height: 80vh;
 }
 .game-info-container {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 80%;
+	width: 100%;
+	padding:0 10vw;
 	justify-self: center;
 	align-self: center;
+	justify-content: center;
+	align-items: center;
 }
+.game-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 2.5vw;
+
+}
+.game-info-image {
+	width: 40vw;
+	height: auto;
+}
+.easter-egg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+article {margin:2.5vw 0 }
+@media (max-width: 1095px) {
+	.game-info-container {
+		padding:0
+	}}
+	
 @media (max-width: 900px) {
 	.game-info-container {
 		flex-direction: column;
 	}
 	.game-info-image {
-		width: 80vw;
+		width: 40vw;
 		height: auto;
 	}
 }
-.game-info-image {
-	width: 40vw;
-}
-h1 {
-	font-family: orifont;
-}
-h3 {
-	font-family: MinSans;
-}
-li {
-	font-family: MinSans;
-}
-img {
-	width: 25vw;
-	height: auto;
-}
-points {
-	font-family: MinSans;
-}
 
-a {
-	text-decoration: none;
-	color: white;
-}
+
+
+
 #close {
 	position: absolute;
 	top: 0;
@@ -212,8 +241,7 @@ footer {
 	width: auto;
 	height: 75px;
 }
-.characters-info{
-}
+
 .skill-img{
 	background-color: #03001C ;
 	border-radius: 50%;

@@ -113,7 +113,9 @@
 					<li
 						class="nav-item text-xl lg:text-2xl"
 					>
-						<a class="nav-link" href="login.html">Login</a>
+						<a class="nav-link" href="login.html"
+							>Login</a
+						>
 					</li>
 				</ul>
 			</div>
@@ -208,23 +210,67 @@
 		</header>
 		<main>
 			<form>
-				<div class="mb-3">
-				  <label for="username" class="form-label">Username</label>
-				  <input type="text" class="form-control" id="username" aria-describedby="emailHelp">
-				  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <div class="mb-3">
+					<label for="email" class="form-label"
+						>Email</label
+					>
+					<input
+						type="email"
+						class="form-control"
+						id="email"
+					/>
 				</div>
 				<div class="mb-3">
-				  <label for="password" class="form-label">Password</label>
-				  <input type="password" class="form-control" id="password">
-
+					<label for="username" class="form-label"
+						>Username</label
+					>
+					<input
+						type="text"
+						class="form-control"
+						id="username"
+						aria-describedby="emailHelp"
+					/>
+					<div id="emailHelp" class="form-text">
+						We'll never share your email with
+						anyone else.
+					</div>
+				</div>
+				<div class="mb-3">
+					<label for="password" class="form-label"
+						>Password</label
+					>
+					<input
+						type="password"
+						class="form-control"
+						id="password"
+					/>
+				</div>
+                <div class="mb-3">
+					<label for="password-confirm" class="form-label"
+						>Confirm Password</label
+					>
+					<input
+						type="text"
+						class="form-control"
+						id="password-confirm"
+					/>
 				</div>
 				<!-- <div class="mb-3 form-check">
 				  <input type="checkbox" class="form-check-input" id="exampleCheck1">
 				  <label class="form-check-label" for="exampleCheck1">Check me out</label>
 				</div> -->
-				<button type="login-button" class="btn btn-primary" id="login-button">Submit</button>
-			  </form>
-			  Dont have an account? <a href="signup.html">sign up</a>
+				<button
+					type="submit"
+					class="btn btn-primary"
+                    id = "signup-button"
+				>
+					Submit
+				</button>
+			</form>
+			<span
+				>already have an account?
+				<a href="login.html">login</a></span
+			>
 		</main>
 
 		<footer>
@@ -261,8 +307,7 @@
 			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 			crossorigin="anonymous"
 		></script>
-		<script src="./javascript/login.js"></script>
+        <script src="./javascript/signup.js"></script>
 		<script src="./javascript/index.js"></script>
 	</body>
 </html>
-
