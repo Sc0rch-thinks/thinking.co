@@ -716,9 +716,11 @@ header {
 
 .logo {
   min-height: 80px;
+  min-width: 80px;
   width: 8vw;
-  height: auto;
+  height: 8vw;
   max-width: 120px;
+  max-height: 100px;
   align-self: center;
   padding: 10px;
 }
