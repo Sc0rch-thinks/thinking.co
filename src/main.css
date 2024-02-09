@@ -5,14 +5,12 @@
 @font-face {
 	font-family: "minsans";
 	src: url(media/fonts/MinSans-Regular.otf);
-	src: url(media/fonts/MinSans-Regular.otf)
-		format("opentype");
+	src: url(media/fonts/MinSans-Regular.otf) format("opentype");
 }
 @font-face {
 	font-family: "orifont";
 	src: url(media/fonts/Orifont-Regular.ttf);
-	src: url(media/fonts/Orifont-Regular.ttf)
-		format("truetype");
+	src: url(media/fonts/Orifont-Regular.ttf) format("truetype");
 }
 :root {
 	--primary-color: #b3daff;
@@ -26,7 +24,7 @@ h1 {
 h3 {
 	font-family: MinSans;
 }
-p{
+p {
 	font-family: MinSans;
 }
 li {
@@ -143,26 +141,25 @@ main {
 .game-info-container {
 	display: flex;
 	width: 100%;
-	padding:0 10vw;
+	padding: 0 10vw;
 	justify-self: center;
 	align-self: center;
 	justify-content: center;
 	align-items: center;
 }
-.game-info{
+.game-info {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding-left: 2.5vw;
-
 }
 .game-info-image {
 	width: 40vw;
 	height: auto;
 }
 .easter-egg {
-	display: flex ;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -170,12 +167,15 @@ main {
 #synopsis {
 	flex-direction: row-reverse;
 }
-article {margin:2.5vw 0 }
+article {
+	margin: 2.5vw 0;
+}
 @media (max-width: 1095px) {
 	.game-info-container {
-		padding:0
-	}}
-	
+		padding: 0;
+	}
+}
+
 @media (max-width: 900px) {
 	.game-info-container {
 		flex-direction: column;
@@ -185,9 +185,6 @@ article {margin:2.5vw 0 }
 		height: auto;
 	}
 }
-
-
-
 
 #close {
 	position: absolute;
@@ -224,7 +221,7 @@ article {margin:2.5vw 0 }
 	}
 	.main-character {
 		padding: 0;
-		padding-bottom :100px
+		padding-bottom: 100px;
 	}
 }
 footer {
@@ -245,7 +242,143 @@ footer {
 	height: 75px;
 }
 
-.skill-img{
-	background-color: #03001C ;
+.character-img {
+	width: 20vw;
+	height: auto;
+}
+.characters-info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 2.5vw;
+}
+
+.enviroment-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.locations {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: start;
+	margin: 2.5vw;
+}
+.enviroment-img {
+	width: 30vw;
+	height: auto;
+	margin: 2.5vw;
+}
+
+.ability-tree {
+	width: 35vw;
+	height: auto;
+	position: sticky;
+	top: 100px;
+	margin: 2.5vw;
+}
+.ability-tree-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: start;
+}
+.enviroments-content {
+	margin-right: 10vw;
+}
+.skills-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.skill-img {
+	background-color: #03001c;
 	border-radius: 50%;
+	width: 10vw;
+}
+.skills-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 25vw;
+}
+
+.quiz-container {
+	width: 40vw;
+	height: 20vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--secondary-color);
+	color: white;
+}
+gacha-link:link {
+	colour: white;
+}
+.gacha-link:visited {
+	colour: white;
+}
+.gacha-link:hover {
+	colour: white;
+}
+.gacha-link:active {
+	colour: white;
+}
+
+.quiz-container2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+@media (max-width: 900px) {
+	.characters-info {
+		flex-direction: column;
+	}
+	.character-img {
+		width: 40vw;
+		height: auto;
+	}
+	.enviroment-img {
+		width: 50vw;
+		height: auto;
+	}
+	.locations {
+		flex-direction: column;
+	}
+	.ability-tree-container {
+		flex-direction: column;
+	}
+	.ability-tree {
+		width: 90vw;
+		height: auto;
+	}
+	.enviroments-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 2.5vw;
+	}
+	.skills-info {
+		margin: 2.5vw;
+	}
+}
+.character-3d {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80vw;
+	height: 40vH;
+}
+iframe{
+	width: 100%;
+	height: 100%;
 }

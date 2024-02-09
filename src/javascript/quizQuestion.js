@@ -274,4 +274,4 @@ function displayQuestion() {
 	});
 }
 
-// displayQuestion();
+displayQuestion();
