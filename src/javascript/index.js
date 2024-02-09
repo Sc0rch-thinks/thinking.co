@@ -18,3 +18,4 @@ document
 			"overlay"
 		).style.display = "none";
 	});
+

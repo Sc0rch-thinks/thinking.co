@@ -28,6 +28,7 @@ document
 					window.location.href = "index.html";
                     localStorage.setItem("username",response[i].username);
                     localStorage.setItem("points",response[i].points);
+					localStorage.setItem("id",response[i]._id);
 					return;
 				}
 			}alert("Invalid username or password");

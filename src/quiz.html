@@ -18,6 +18,11 @@
 			href="./css/normalise.css"
 		/>
 		<link rel="stylesheet" href="./style.css" />
+        <script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
 		<header class="flex sticky">
@@ -104,8 +109,7 @@
 						<a
 							class="nav-link"
 							href="./quiz-hub.html"
-						>
-							Quiz hub</a
+							>Quiz hub</a
 						>
 					</li>
 					<li
@@ -178,13 +182,12 @@
 							<a
 								href="./quiz-hub.html"
 								class="ori text-3xl lg:text-2xl"
-							>
-								Quiz hub</a
+								>Quiz hub</a
 							>
 						</li>
 						<li>
 							<a
-								href="login.html"
+								href="./login.html"
 								class="ori text-3xl lg:text-2xl"
 								>Login</a
 							>
@@ -208,57 +211,77 @@
 			</div>
 		</header>
 		<main>
-			<nav>
-				<ul>
-					<li>
-						<a href="skills-info.html"
-							>spirit flame</a
-						>
-					</li>
-					<li>
-						<a href="skills-info.html"
-							>wall jump</a
-						>
-					</li>
-					<li>
-						<a href="skills-info.html"
-							>charge flame</a
-						>
-					</li>
-					<li>
-						<a href="skills-info.html"
-							>double jump</a
-						>
-					</li>
-					<li>
-						<a href="skills-info.html">bash</a>
-					</li>
-					<li>
-						<a href="skills-info.html">stomp</a>
-					</li>
-					<li>
-						<a href="skills-info.html"
-							>kuro's feather</a
-						>
-					</li>
-					<li>
-						<a href="skills-info.html">climb</a>
-					</li>
-					<li>
-						<a href="skills-info.html"
-							>charge jump</a
-						>
-					</li>
-					<li>
-						<a href="skills-info.html"
-							>light burst</a
-						>
-					</li>
-					<li>
-						<a href="skills-info.html">dash</a>
-					</li>
-				</ul>
-			</nav>
+			<div class="quiz-container">
+                <div class="quiz-header">
+                    <h1 class="quiz-title">Quiz</h1>
+                    <p class="quiz-description">
+                        Test your knowledge of Ori and the Blind Forest
+                    </p>
+                </div>
+                <div class="quiz-body">
+                    <div class="quiz" id="quiz-question1">
+                        <form >
+                            <h1 id="question1"></h1>
+                            <input type="radio" id="answer1.1" name="answer" value="1">
+                            <label for="answer1.1" id="option1.1"></label><br>
+                            <input type="radio" id="answer1.2" name="answer" value="2">
+                            <label for="answer1.2" id="option1.2"></label><br>
+                            <input type="radio" id="answer1.3" name="answer" value="3">
+                            <label for="answer1.3" id="option1.3"></label><br>
+                            <input type="radio" id="answer1.4" name="answer" value="4">
+                            <label for="answer1.4" id="option1.4"></label><br>
+
+                            <hr>
+                        </form>
+                    </div>
+                    
+                    <div class="quiz" id="quiz-question2">
+                        <form >
+                            <h1 id="question2"></h1>
+                            <input type="radio" id="answer2.1" name="answer" value="1">
+                            <label for="answer2.1" id="option2.1"></label><br>
+                            <input type="radio" id="answer2.2" name="answer" value="2">
+                            <label for="answer2.2" id="option2.2"></label><br>
+                            <input type="radio" id="answer2.3" name="answer" value="3">
+                            <label for="answer2.3" id="option2.3"></label><br>
+                            <input type="radio" id="answer2.4" name="answer" value="4">
+                            <label for="answer2.4" id="option2.4"></label><br>
+                            <hr>
+                        </form>
+                    </div>
+                    <div class="quiz" id="quiz-question3">
+                        <form >
+                            <h1 id="question3"></h1>
+                            <input type="radio" id="answer3.1" name="answer" value="1">
+                            <label for="answer3.1" id="option3.1"></label><br>
+                            <input type="radio" id="answer3.2" name="answer" value="2">
+                            <label for="answer3.2" id="option3.2"></label><br>
+                            <input type="radio" id="answer3.3" name="answer" value="3">
+                            <label for="answer3.3" id="option3.3"></label><br>
+                            <input type="radio" id="answer3.4" name="answer" value="4">
+                            <label for="answer3.4" id="option3.4"></label><br>
+                            <hr>
+                        </form>
+                    </div>
+                    <div class="quiz" id="quiz-question4">
+                        <form >
+                            <h1 id="question4"></h1>
+                            <input type="radio" id="answer4.1" name="answer" value="1">
+                            <label for="answer4.1" id="option4.1"></label><br>
+                            <input type="radio" id="answer4.2" name="answer" value="2">
+                            <label for="answer4.2" id="option4.2"></label><br>
+                            <input type="radio" id="answer4.3" name="answer" value="3">
+                            <label for="answer4.3" id="option4.3"></label><br>
+                            <input type="radio" id="answer4.4" name="answer" value="4">
+                            <label for="answer4.4" id="option4.4"></label><br>
+                            <hr>
+                        </form>
+
+                    </div>
+					<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+
+                </div>
+            </div>
 		</main>
 
 		<footer>
@@ -296,5 +319,6 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="./javascript/index.js"></script>
+        <script src="./javascript/quizQuestion.js"></script>
 	</body>
 </html>
