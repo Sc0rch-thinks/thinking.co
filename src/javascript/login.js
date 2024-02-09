@@ -29,6 +29,8 @@ document
                     localStorage.setItem("username",response[i].username);
                     localStorage.setItem("points",response[i].points);
 					localStorage.setItem("id",response[i]._id);
+					localStorage.setItem("remaining-questions",response[i].remainingQuestions);
+					localStorage.setItem("inventory",response[i].inventory);
 					return;
 				}
 			}alert("Invalid username or password");

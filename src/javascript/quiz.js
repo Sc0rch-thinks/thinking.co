@@ -1,4 +1,7 @@
  function updatePoints () {
+	console.log("setquestions");
+	var date = new Date();
+	console.log(date);
 	var settings = {
 		"url": "https://intergrated-40bd.restdb.io/rest/login",
 		"method": "GET",
@@ -16,39 +19,6 @@
 			) {
 				response[i].points = localStorage.getItem("points");
 				console.log(response[i].points);
-				return;
-			}
-		}
-	  });
-};
-function getPoints() {
-	console.log("getPoints");
-	var points = localStorage.getItem("points");
-	document.getElementById(
-		"point-counter"
-	).innerHTML = "points : " + points;
-}
-
-function setquestions() {
-	console.log("setquestions");
-	var date = new Date();
-	console.log(date);
-	var settings = {
-		url: "https://intergrated-40bd.restdb.io/rest/login",
-		method: "GET",
-		timeout: 0,
-		headers: {
-			"x-apikey": "65a78c8beb463b13995b4bdd",
-		},
-	};
-
-	$.ajax(settings).done(function (response) {
-		console.log(response);
-		for (var i = 0; i < response.length; i++) {
-			if (
-				response[i].username ===
-				localStorage.getItem("username")
-			) {
 				var quizlast = response[i].quizlast;
 				console.log(quizlast);
 				if (
@@ -68,20 +38,31 @@ function setquestions() {
 						questions
 					);
 				}
+				if (remainingQuestions >0) {
+					document.getElementById("questions").innerHTML="You have "+remainingQuestions+" questions left";
+				}else {
+					document.getElementById("questions").innerHTML="You have no questions left";
+				}
 			}
 		}
-		var questions = localStorage.getItem(
-			"remaining-questions"
-		);
-		document.getElementById(
-			"quiz-quiestion-left"
-		).innerHTML =
-			"questions remaining : " + questions;
-			if (questions == 0) {
-				document.getElementById("quiz-quiestion-left").style.disabled = true;
-			}
-	});
+	  });
+};
+function getPoints() {
+	console.log("getPoints");
+	var points = localStorage.getItem("points");
+	document.getElementById(
+		"point-counter"
+	).innerHTML = "points : " + points;
 }
+document.getElementById("questions").addEventListener("click", function (e) {
+	e.preventDefault();
+	if (localStorage.getItem("remaining-questions") > 0) {
+		indow.location.href = "quiz.html";
+	}
+});
+	w
+
+
 // updatePoints();
-// setquestions();
+
 // getPoints();

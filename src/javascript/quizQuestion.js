@@ -1,13 +1,16 @@
 function displayQuestion() {
 	if (Number(localStorage.getItem("remaining-questions")) < 4) {
 		document.getElementById("quiz-question4").style.display = "none";
-	} else if (Number(localStorage.getItem("remaining-questions")) < 3) {
+	} ;
+	if (Number(localStorage.getItem("remaining-questions")) < 3) {
 		document.getElementById("quiz-question3").style.display = "none";
-	} else if (Number(localStorage.getItem("remaining-questions")) < 2) {
+	} ;
+	if (Number(localStorage.getItem("remaining-questions")) < 2) {
 		document.getElementById("quiz-question2").style.display = "none";
-	} else if (Number(localStorage.getItem("remaining-questions")) < 1) {
+	} ;
+	 if (Number(localStorage.getItem("remaining-questions")) < 1) {
 		document.getElementById("quiz-question1").style.display = "none";
-	} else;
+	} 
 
 	var settings = {
 		url: "https://intergrated-40bd.restdb.io/rest/question",
@@ -126,13 +129,15 @@ function displayQuestion() {
 			if (correct == true) {
 				localStorage.setItem(
 					"points",
-					Number(localStorage.getItem("points")) + shuffled[0].points
+					Number(localStorage.getItem("points")) +Number( shuffled[0].points)
 				);
 				localStorage.setItem(
 					"remaining-questions",
 					Number(localStorage.getItem("remaining-questions")) - 1
 				);
-			}
+				console.log(localStorage.getItem("points"))
+
+			};
 
 			var answer2 = shuffled[1].correct;
 			if (
@@ -161,12 +166,14 @@ function displayQuestion() {
 			if (correct == true) {
 				localStorage.setItem(
 					"points",
-					Number(localStorage.getItem("points")) + shuffled[1].points
+					Number(localStorage.getItem("points")) + Number(shuffled[1].points)
 				);
 				localStorage.setItem(
 					"remaining-questions",
 					Number(localStorage.getItem("remaining-questions")) - 1
 				);
+				console.log(localStorage.getItem("points"))
+
 			}
 			var answer3 = shuffled[2].correct;
 			if (
@@ -195,12 +202,14 @@ function displayQuestion() {
 			if (correct == true) {
 				localStorage.setItem(
 					"points",
-					Number(localStorage.getItem("points")) + shuffled[2].points
+					Number(localStorage.getItem("points")) + Number(shuffled[2].points)
 				);
 				localStorage.setItem(
 					"remaining-questions",
 					Number(localStorage.getItem("remaining-questions")) - 1
 				);
+				console.log(localStorage.getItem("points"))
+
 			}
 			var answer4 = shuffled[3].correct;
 			if (
@@ -229,12 +238,14 @@ function displayQuestion() {
 			if (correct == true) {
 				localStorage.setItem(
 					"points",
-					Number(localStorage.getItem("points")) + shuffled[2].points
+					Number(localStorage.getItem("points")) + Number(shuffled[3].points)
 				);
 				localStorage.setItem(
 					"remaining-questions",
 					Number(localStorage.getItem("remaining-questions")) - 1
 				);
+				console.log(localStorage.getItem("points"))
+
 			}
 			var jsondata = {
 				points: localStorage.getItem("points"),
@@ -255,7 +266,10 @@ function displayQuestion() {
 
 			$.ajax(settings).done(function (response) {
 				console.log(response);
+
 			});
+			alert("You have " +localStorage.getItem("points") + " points");
+			window.location.href = "index.html";
 		});
 	});
 }

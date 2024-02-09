@@ -12,11 +12,6 @@
 		/>
 		<link rel="stylesheet" href="./css/normalise.css" />
 		<link rel="stylesheet" href="./style.css" />
-		<script
-			src="https://code.jquery.com/jquery-3.7.1.min.js"
-			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-			crossorigin="anonymous"
-		></script>
 	</head>
 	<body>
 		<header class="flex sticky">
@@ -129,15 +124,19 @@
 			</div>
 		</header>
 		<main>
-			<article>
-				<span id="point-counter"></span>
-			</article>
-			<article class="quiz-container">
-				<button type="button" id="questions"></button>
-			</article>
-			<article>
-				<a href="gacha.html">gacha</a>
-			</article>
+			<button type="button" id="gacha">
+				<script
+					src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+					type="module"
+				></script>
+
+				<dotlottie-player
+                src="./media/Flow 3.lottie"
+					background="transparent"
+					speed="1"
+					style="width: 300px; height: 300px"
+				></dotlottie-player>
+			</button>
 		</main>
 
 		<footer>
@@ -159,6 +158,6 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="./javascript/index.js"></script>
-		<script src="./javascript/quiz.js"></script>
+        <script src="./javascript/gacha.js"></script>
 	</body>
 </html>
